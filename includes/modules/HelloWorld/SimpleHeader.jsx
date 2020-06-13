@@ -11,12 +11,9 @@ class SimpleHeader extends Component {
 
   render() {
     return (
-      <Fragment>
-        <h1 className="simp-simple-header-heading">{this.props.heading}</h1>
-        <p>
-          {this.props.content()}
-        </p>
-      </Fragment>
+      <div className="simp-simple-header">
+        {this.props.content()}
+      </div>
     );
   }
 }
